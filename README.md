@@ -83,7 +83,7 @@ RUN apt-get -y update && \
 
 ```
 git add Dockerfile
-git commit -m 'creating a docker file'
+git commit -m 'creating the Dockerfile'
 git push
 ```
 
