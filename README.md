@@ -94,7 +94,9 @@ git push
    `<yourdockerhubusername>/computational-workflows`.
 
 ```
-# Add your commands here
+docker build -t pmoradis/computational-workflows .
+docker login
+docker push pmoradis/computational-workflows
 ```
 
 ## Run a container, and share in files from the host.
