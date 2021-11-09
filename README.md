@@ -106,7 +106,7 @@ docker push pmoradis/computational-workflows
    an interactive prompt inside the running container.
 
 ```
-# Add your commands here
+docker run -ti -v "$(pwd):/shared" pmoradis/computational-workflows:latest
 ```
 
 ## Setup a simple Python test suite
