@@ -126,7 +126,7 @@ git push
    directory `/root/shared` into the container.
 
 ```
-# Add your commands here
+docker run -ti -v "$(pwd):/shared" -w /shared pmoradis/computational-workflows:latest
 ```
 
 3. Run the tests inside the container by going to `/root/shared` and running the
