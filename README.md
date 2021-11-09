@@ -117,7 +117,9 @@ docker run -ti -v "$(pwd):/shared" pmoradis/computational-workflows:latest
    repository.  ``git add``, ``git commit`` and ``git push`` them.
 
 ```
-# Add your commands here
+git add wallet.py test_wallet.py
+git commit -m 'adding wallet.py and test_wallet.py'
+git push
 ```
 
 2. Start a Docker container using your image and share your repository into a
