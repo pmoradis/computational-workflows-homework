@@ -5,7 +5,7 @@ on: [push]
 jobs:
   tests:
     runs-on: ubuntu-20.04
-    container: jhale/computational-workflows:latest
+    container: pmoradis/computational-workflows:latest
     
   steps:
   - name: Checkout code
