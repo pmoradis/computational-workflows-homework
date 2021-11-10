@@ -1,14 +1,14 @@
-name: Wallet test
+name: Wallet CI
 on: [push]
-
 jobs:
   tests:
     runs-on: ubuntu-20.04
-    container: pmoradis/computational-workflows:latest
-    
-  steps:
-  - uses: actions/checkout@v2
-    
-  - name: Run tests
-    run: |
-      python3 -m pytest
+    container: pmoradis/computational-workflows-homework:latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run tests
+        run: |
+          python3 -m pytest
