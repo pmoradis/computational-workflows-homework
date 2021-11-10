@@ -2,8 +2,8 @@ name: Wallet CI
 on: [push]
 jobs:
   tests:
-    runs-on: ubuntu-21.04
-    container: pmoradis/computational-workflows-homework:latest
+    runs-on: ubuntu-latest
+    container: pmoradis/computational-workflows:latest
 
     steps:
       - name: Checkout code
