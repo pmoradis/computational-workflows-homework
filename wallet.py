@@ -22,3 +22,4 @@ class Wallet(object):
     def add_cash(self, amount):
         if type(amount) == (int or float):
             self.balance += amount
+            
